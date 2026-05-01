@@ -175,15 +175,49 @@
         <a href="https://web.facebook.com/profile.php?id=100093487497726" class="social-link" target="_blank">Facebook</a>
         <a href="https://www.youtube.com/@Inside-GPU" class="social-link" target="_blank">YouTube</a>
     </div>
-    <div class="copyright">
-        &copy; <span id="year"></span> Inside-GPU. All rights reserved. | 
-        <a href="privacy.html" class="footer-policy-link">Privacy Policy</a>
+<div class="copyright">
+        <p>&copy; <span id="year"></span> Inside-GPU. All rights reserved.</p>
+        <div class="footer-legal">
+            <a href="privacy.html" class="legal-link">Privacy Policy</a>
+        </div>
     </div>
+</footer>
 
-    <script>
-        // This small script automatically updates the year
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
+<style>
+    /* --- Enhanced Legal Link Styles --- */
+    .footer-legal {
+        margin-top: 15px;
+    }
+
+    .legal-link {
+        color: var(--text-dim);
+        text-decoration: none;
+        font-size: 0.95rem; /* Larger and more readable */
+        font-weight: 600;
+        padding: 5px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    .legal-link:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+        background: rgba(0, 210, 255, 0.05);
+        box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    .copyright p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 0.85rem;
+    }
+</style>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </footer>
 
 </body>
