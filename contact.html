@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Inside-GPU</title>
+    <style>
+        :root {
+            --dark-bg: #0f1115;
+            --card-bg: rgba(45, 48, 62, 0.7);
+            --accent: #00d2ff;
+            --accent-glow: rgba(0, 210, 255, 0.3);
+            --text-main: #ffffff;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--dark-bg);
+            background-image: radial-gradient(circle at 50% 0%, #1c2331 0%, #0f1115 100%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0 20px 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- Navigation Styles --- */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 30px 0;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .nav-btn:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: rgba(0, 210, 255, 0.05);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .nav-btn.active {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(0, 210, 255, 0.1);
+        }
+
+        /* --- Content Styles --- */
+        .content-container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            flex-grow: 1;
+            line-height: 1.8;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 { 
+            font-size: 3rem; 
+            margin: 0; 
+            background: linear-gradient(to right, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 { color: var(--accent); margin-top: 0; }
+
+        .email-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: rgba(0, 210, 255, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .email-link:hover {
+            background: var(--accent);
+            color: var(--dark-bg);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .support-info {
+            margin-top: 30px;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        /* --- Footer Styles --- */
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 15px;
+        }
+
+        .social-link {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="contact.html" class="nav-btn active">Contact</a>
+</nav>
+
+<div class="content-container">
+    <header>
+        <h1>Contact Inside-GPU</h1>
+    </header>
+
+    <div class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>
+            For technical support, business inquiries, or feedback regarding our Unity assets, 
+            please reach out via our official developer email.
+        </p>
+        
+        <a href="mailto:info.insidegpu@gmail.com" class="email-link">info.insidegpu@gmail.com</a>
+
+        <div class="support-info">
+            <p>Average response time: <strong>24 - 48 hours</strong></p>
+            <p>Please include your <strong>Invoice ID</strong> for faster technical support.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="social-links">
+        <a href="https://web.facebook.com/profile.php?id=100093487497726" class="social-link" target="_blank">Facebook</a>
+        <a href="https://www.youtube.com/@Inside-GPU" class="social-link" target="_blank">YouTube</a>
+    </div>
+    <div class="copyright">
+        &copy; 2026 Inside-GPU. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
