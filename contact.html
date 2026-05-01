@@ -85,38 +85,42 @@
             background: var(--card-bg);
             backdrop-filter: blur(10px);
             border-radius: 20px;
-            padding: 40px;
+            padding: 50px 40px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             margin-bottom: 30px;
             text-align: center;
         }
 
-        h2 { color: var(--accent); margin-top: 0; }
+        h2 { color: var(--accent); margin-top: 0; font-size: 1.8rem; }
+
+        .enhanced-message {
+            color: var(--text-main);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            line-height: 1.7;
+        }
 
         .email-link {
             display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
+            margin-top: 10px;
+            padding: 18px 40px;
             background: rgba(0, 210, 255, 0.1);
             border: 1px solid var(--accent);
             color: var(--accent);
             text-decoration: none;
             border-radius: 12px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
+            letter-spacing: 0.5px;
         }
 
         .email-link:hover {
             background: var(--accent);
             color: var(--dark-bg);
-            box-shadow: 0 0 20px var(--accent-glow);
-        }
-
-        .support-info {
-            margin-top: 30px;
-            color: var(--text-dim);
-            font-size: 0.95rem;
+            box-shadow: 0 0 25px var(--accent-glow);
+            transform: translateY(-2px);
         }
 
         /* --- Footer Styles --- */
@@ -168,17 +172,11 @@
 
     <div class="contact-section">
         <h2>Get in Touch</h2>
-        <p>
-            For technical support, business inquiries, or feedback regarding our Unity assets, 
-            please reach out via our official developer email.
+        <p class="enhanced-message">
+            Whether you require expert technical support for our current assets, have business inquiries regarding future collaborations, or wish to provide valuable feedback on our Unity tools, we are here to help. Please reach out to us directly via our official developer email.
         </p>
         
         <a href="mailto:info.insidegpu@gmail.com" class="email-link">info.insidegpu@gmail.com</a>
-
-        <div class="support-info">
-            <p>Average response time: <strong>24 - 48 hours</strong></p>
-            <p>Please include your <strong>Invoice ID</strong> for faster technical support.</p>
-        </div>
     </div>
 </div>
 
