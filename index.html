@@ -82,11 +82,12 @@
         }
 
         .asset-grid {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 340px);
             justify-content: center;
             gap: 30px;
             max-width: 1200px;
+            width: 100%;
             margin: 0 auto;
             flex-grow: 1;
         }
